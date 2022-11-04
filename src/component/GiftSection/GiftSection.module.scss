@@ -1,0 +1,25 @@
+.wrapper {
+	--section-padding: 2rem;
+	--margin-top: 20px;
+	--background-position-2: -2.75rem 23.5rem;
+	margin-top: var(--margin-top);
+	background-color: var(--bg-light);
+	background-image: url(../../assets/img/gift-background.png), url(../../assets/img/gift.svg);
+	background-position: 110% bottom, var(--background-position-2);
+	background-repeat: no-repeat;
+	background-size: 40%, 30%;
+	position: relative;
+
+	@media screen and (min-width: 56.25rem) {
+		--background-position-2: -6.75rem 12.5rem;
+		background-size: 40%, 20%;
+	}
+
+	.inner {
+		padding-left: 20px;
+		grid-column: 2 / span 1;
+		display: grid;
+		grid-template-columns: min(750px, 100%) auto;
+		justify-content: start;
+	}
+}

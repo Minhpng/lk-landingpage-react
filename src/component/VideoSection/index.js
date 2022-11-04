@@ -19,7 +19,7 @@ function VideoWrapperBox() {
                             <use xlinkHref={`${images.playBtnIcon.default}#play-btn`}></use>
                         </svg>
                     </div>
-                    <img src={images.videoThumbnail} alt="video thumbnail" />
+                    <img src={images.videoThumbnail} alt="video thumbnail" tabIndex={-1} />
                 </div>
             </div>
         </div>
