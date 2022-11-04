@@ -1,10 +1,12 @@
 import Button from "./component/Button";
+import Header from "./component/Header";
 
 
 function App() {
   return (
-    <div style={{ 'padding': '3em' }}>
-    </div>
+    <>
+      <Header />
+    </>
   );
 }
 
