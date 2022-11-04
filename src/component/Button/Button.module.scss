@@ -1,0 +1,26 @@
+.btn {
+	padding: 1em;
+	font-size: 1rem;
+	font-weight: 500;
+	background-color: hsl(0, 0%, 90%);
+	color: #333;
+	border: 1px solid transparent;
+	cursor: pointer;
+
+	&:hover {
+		opacity: 0.8;
+	}
+}
+
+.btn + .btn {
+	margin-left: 0.8em;
+}
+
+.primary {
+	background-color: var(--clr-primary-400);
+	color: #fff;
+}
+
+.rounded {
+	border-radius: 15px;
+}

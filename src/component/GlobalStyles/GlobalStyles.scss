@@ -1,0 +1,11 @@
+@import "./variables";
+@import "./normalize";
+@import "./text-color";
+@import "./utilities";
+
+body {
+	font-family: "roboto", sans-serif;
+	background-color: var(--bg-gray-100);
+	overflow-x: hidden;
+	color: var(--text-color);
+}

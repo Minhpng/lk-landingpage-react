@@ -1,0 +1,25 @@
+.btn {
+	padding: 1em;
+	font-size: 1rem;
+	background-color: #f2f2f2;
+	color: #333;
+	cursor: pointer;
+	border: none;
+
+	&:hover {
+		outline: 1px solid cornflowerblue;
+	}
+}
+
+.primary {
+	background-color: cornflowerblue;
+	color: white;
+}
+
+.rounded {
+	border-radius: 10px;
+}
+
+.btn + .btn {
+	margin-left: 0.8em;
+}
