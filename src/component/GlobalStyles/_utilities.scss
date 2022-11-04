@@ -152,52 +152,6 @@
 
 // button
 
-.btn {
-	display: inline-block;
-	font-size: var(--fs-500);
-	font-weight: var(--fw-semi-bold);
-	background-color: var(--clr-green);
-	color: white;
-	padding: 0.525em 1.25em;
-	border: none;
-	border-radius: 100vw;
-	cursor: pointer;
-	transition: background-color 300ms;
-	user-select: none;
-
-	&:hover,
-	&:active {
-		opacity: 0.9;
-	}
-
-	&.btn-no-bg {
-		background-color: transparent;
-		color: hsl(204, 100%, 60%);
-	}
-}
-
-.video-wrapper {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	margin-inline: -15px;
-	cursor: pointer;
-
-	&:hover .play-icon {
-		opacity: 0.9;
-	}
-
-	.play-icon {
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		transform: translate(-50%, -50%);
-		width: min(90px, 20%);
-		transition: opacity 300ms;
-	}
-}
-
 .list-item-number {
 	display: grid;
 	grid-template-columns: 30px 1fr;

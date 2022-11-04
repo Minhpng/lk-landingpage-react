@@ -1,26 +1,24 @@
 .btn {
-	padding: 1em;
-	font-size: 1rem;
-	font-weight: 500;
-	background-color: hsl(0, 0%, 90%);
-	color: #333;
-	border: 1px solid transparent;
+	display: inline-block;
+	font-size: var(--fs-500);
+	font-weight: var(--fw-semi-bold);
+	background-color: var(--clr-green);
+	color: white;
+	padding: 0.525em 1.25em;
+	border: none;
+	border-radius: 100vw;
 	cursor: pointer;
+	transition: background-color 300ms;
+	user-select: none;
+	text-transform: uppercase;
 
-	&:hover {
-		opacity: 0.8;
+	&:hover,
+	&:active {
+		opacity: 0.9;
 	}
-}
 
-.btn + .btn {
-	margin-left: 0.8em;
-}
-
-.primary {
-	background-color: var(--clr-primary-400);
-	color: #fff;
-}
-
-.rounded {
-	border-radius: 15px;
+	&.btn-no-bg {
+		background-color: transparent;
+		color: hsl(204, 100%, 60%);
+	}
 }
