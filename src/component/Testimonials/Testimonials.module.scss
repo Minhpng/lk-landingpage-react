@@ -1,0 +1,57 @@
+.testimonial {
+	text-align: center;
+	padding-top: var(--section-padding);
+	margin-inline: auto;
+
+	overflow: hidden;
+
+	background-image: url("../../assets/img/section-divider.svg");
+	background-size: auto;
+	background-position: left top;
+	background-repeat: repeat-x;
+	background-color: #377afd;
+	color: #fff;
+
+	h1 {
+		padding-top: 2rem;
+	}
+
+	.container {
+		overflow: hidden;
+	}
+
+	.image {
+		background-image: url("../../assets/img/comment/big-comment-vertical.png");
+		background-size: 100%;
+		background-position: center center;
+		background-repeat: no-repeat;
+		width: calc(100% - 20px);
+		margin-inline: auto;
+		padding-top: 450%;
+
+		img {
+			display: none;
+		}
+
+		@media (min-width: 56.25rem) {
+			background-image: none;
+			width: 100%;
+			padding-top: 0;
+			min-width: 800px;
+
+			img {
+				display: block;
+				position: relative;
+				left: 50%;
+				transform: translateX(-50%);
+				margin-block: 1.25rem;
+				min-width: 1816px;
+			}
+		}
+	}
+}
+
+.wrapper {
+	padding-block: 1.25em;
+	position: relative;
+}

@@ -1,0 +1,27 @@
+footer {
+	background-color: var(--clr-gray-300);
+	color: #fff;
+	line-height: 1.8;
+	width: 100%;
+	padding-bottom: 1rem;
+	margin-top: auto;
+	text-align: center;
+}
+footer h1 {
+	font-size: 1.25rem;
+	line-height: 1.4;
+	padding: 1.25rem 0 0.2rem;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+footer p {
+	font-size: 0.875rem;
+	line-height: 1.4;
+
+	i {
+		position: relative;
+		top: 2px;
+		margin-right: 0.2em;
+	}
+}

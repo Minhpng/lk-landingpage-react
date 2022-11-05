@@ -1,0 +1,35 @@
+.video {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	flex-grow: 1;
+	padding: 40px 15px 25px;
+
+	&__wrapper {
+		margin-bottom: 1rem;
+	}
+}
+
+.video__bodyWrapper {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	width: 100%;
+
+	& > *:first-child {
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+	}
+	.fs-sec-heading {
+		margin-bottom: 15px;
+	}
+	.btn {
+		margin-top: auto;
+		margin-inline: auto;
+	}
+	.support {
+		margin-top: 1rem;
+	}
+}
