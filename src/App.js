@@ -12,36 +12,39 @@ import VideoModal from "./component/VideoModal";
 
 
 function App() {
-  const [isVideoPopupOpen, setVideoPopupOpen] = useState(false)
-  const [isExercisePopupOpen, setExercisePopupOpen] = useState(false)
-  const [isModalOpen, setModalOpen] = useState({
+  const [ModalState, setModal] = useState({
     isVideoModal: false,
     isExerciseModal: false,
     isLoginModal: false,
   })
 
-  // const isModalOpen = isVideoPopupOpen || isExercisePopupOpen
 
   useEffect(() => {
     const body = document.querySelector('body')
 
-    if (isVideoPopupOpen || isExercisePopupOpen) {
+    if (isModalOpen) {
       body.style.overflowY = 'hidden'
     } else {
       body.style.overflowY = 'auto'
     }
   })
 
+  const isModalOpen = ModalState && Object.values(ModalState).indexOf(true) >= 0
+
+  const { isVideoModal, isExerciseModal } = ModalState
+
+  console.log(ModalState);
+
   return (
     <>
       <Header />
       <HeroSection />
-      <VideoSection />
+      <VideoSection action={setModal} />
       {
         isModalOpen &&
-        (<Modal>
-          {isVideoPopupOpen && <VideoModal />}
-          {isExercisePopupOpen && <ExerciseModal />}
+        (<Modal closeModal={setModal}>
+          {isVideoModal && <VideoModal />}
+          {isExerciseModal && <ExerciseModal />}
         </Modal>)
       }
 

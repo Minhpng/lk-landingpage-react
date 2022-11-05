@@ -8,6 +8,7 @@ function Button({
     href,
     primary,
     rounded,
+    className,
     ...passProps
 }) {
 
@@ -24,7 +25,8 @@ function Button({
 
     const classes = clsx(styles.btn, {
         [styles.primary]: primary,
-        [styles.rounded]: rounded
+        [styles.rounded]: rounded,
+        [className]: className
     })
 
     return (

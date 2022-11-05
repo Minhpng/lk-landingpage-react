@@ -4,7 +4,10 @@ import styles from './Modal.module.scss'
 function Modal({ children, closeModal }) {
 
     const handleClose = () => {
-        closeModal(false)
+        closeModal(prev => {
+            Object.keys(prev).forEach(key => prev[key] = false)
+            return { ...prev }
+        })
     }
 
     return (

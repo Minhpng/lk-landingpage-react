@@ -2,16 +2,16 @@ import clsx from 'clsx'
 
 import styles from './VideoSection.module.scss'
 import images from "../../assets/img";
-import VideoModal from '../VideoModal';
-import { useState } from 'react';
 
 
-function VideoWrapperBox() {
+function VideoWrapperBox({ action }) {
 
-    const [isVideoPopupOpen, setVideoPopupOpen] = useState(false)
 
     const openModal = () => {
-        setVideoPopupOpen(true)
+        action(prev => {
+            prev.isVideoModal = true
+            return { ...prev }
+        })
     }
 
     return (
@@ -32,7 +32,6 @@ function VideoWrapperBox() {
                     </div>
                 </div>
             </div>
-            {isVideoPopupOpen && <VideoModal closeModal={setVideoPopupOpen} />}
         </>
     )
 }
