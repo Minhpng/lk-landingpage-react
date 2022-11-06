@@ -13,10 +13,11 @@ function Countdown({ days, hours, minutes, seconds }) {
         <div className={clsx(styles.wrapper)}>
             <div className={clsx(styles.heading)}>Ưu đãi kết thúc sau:</div>
             <div className={clsx(styles.clockWrapper)}>
-                <div className={clsx(styles.numberWrapper)}>
-                    <span className={clsx(styles.number)}>{zeroPad(days)}</span>
-                    <span className={clsx(styles.prefix)}>Ngày</span>
-                </div>
+                {days > 0 &&
+                    <div className={clsx(styles.numberWrapper)}>
+                        <span className={clsx(styles.number)}>{zeroPad(days)}</span>
+                        <span className={clsx(styles.prefix)}>Ngày</span>
+                    </div>}
                 <div className={clsx(styles.numberWrapper)}>
                     <span className={clsx(styles.number)}>{zeroPad(hours)}</span>
                     <span className={clsx(styles.prefix)}>Giờ</span>

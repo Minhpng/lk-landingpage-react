@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import styles from './Testimonials.module.scss'
+import images from '../../assets/img'
 
 
 
@@ -13,7 +14,7 @@ function Testimonials() {
             <div className={clsx(styles.wrapper)}>
                 <div className={clsx("")}>
                     <div className={clsx(styles.image)}>
-                        <img src="./img/comment/big-comment.png" alt="review" />
+                        <img src={images.bigScreenReviewImage} alt="review" />
                     </div>
                 </div>
 

@@ -2,6 +2,7 @@ import clsx from 'clsx'
 import Countdown from 'react-countdown'
 
 import { default as CountdownElement } from '../Countdown'
+import Support from '../Support'
 import PackageItem from './PackageItem'
 import styles from './PriceList.module.scss'
 
@@ -52,7 +53,6 @@ const packages = [
 ]
 
 function PriceList() {
-    console.log('priceList');
     return (
         <div className={clsx(styles.listWrapper)}>
             <h2 className="fs-sec-heading fw-bold text-center">Mức giá ưu đãi dành riêng cho bạn
@@ -65,6 +65,7 @@ function PriceList() {
                     <PackageItem key={index} packageInfo={packageItem} />
                 ))}
             </div>
+            <Support isLogin />
         </div>
     )
 }

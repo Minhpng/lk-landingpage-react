@@ -1,0 +1,55 @@
+.support {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-size: 1.25rem;
+	padding-block: 1rem;
+	color: red;
+	font-weight: 500;
+	row-gap: 0.3em;
+}
+
+.phoneWrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 0.5rem;
+}
+
+.icon {
+	color: red;
+	width: 2.5rem;
+	height: 2.5rem;
+
+	svg {
+		height: 100%;
+	}
+}
+
+.phoneNumber {
+	color: #333;
+	font-size: 1.25rem;
+	cursor: pointer;
+	font-weight: 700;
+
+	&:hover,
+	&:active {
+		color: hsl(215, 100%, 50%);
+	}
+}
+
+.requestSupport {
+	font-size: 1.25rem;
+	text-align: center;
+	color: #333;
+	display: flex;
+	gap: 5px;
+	flex-direction: column;
+
+	a {
+		color: hsl(215 100% 65%);
+		font-weight: 700;
+	}
+}

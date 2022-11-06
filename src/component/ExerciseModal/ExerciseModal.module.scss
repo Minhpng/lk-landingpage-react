@@ -1,0 +1,32 @@
+.exerciseWrapper {
+	--background-color: hsla(0, 0%, 95%, 1);
+	--result-color: #333;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: start;
+	width: 100%;
+	padding: 40px 15px 45px;
+	background-color: #fff;
+	overflow-y: auto;
+	overflow-x: hidden;
+
+	&.correct {
+		--result-color: var(--clr-green);
+		background-color: hsl(76, 59%, 51%, 0.2);
+	}
+
+	&.incorrect {
+		--result-color: var(--clr-red-700);
+		background-color: hsl(0, 82%, 54%, 0.1);
+	}
+
+	.submit-anwswer {
+		margin-top: auto;
+		min-width: 250px;
+	}
+
+	.btn + .btn {
+		margin-top: 1rem;
+	}
+}

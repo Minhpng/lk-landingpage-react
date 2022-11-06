@@ -33,12 +33,10 @@ function App() {
 
   const { isVideoModal, isExerciseModal } = ModalState
 
-  console.log(ModalState);
-
   return (
     <>
       <Header />
-      <HeroSection />
+      <HeroSection action={setModal} />
       <VideoSection action={setModal} />
       {
         isModalOpen &&

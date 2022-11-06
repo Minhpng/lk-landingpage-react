@@ -1,0 +1,8 @@
+.wrapper {
+	margin-bottom: 1rem;
+	width: 100%;
+
+	@media screen and (min-width: 56.25em) {
+		width: calc(100% - 30px);
+	}
+}

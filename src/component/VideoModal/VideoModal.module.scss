@@ -4,11 +4,8 @@
 	align-items: center;
 	flex-direction: column;
 	flex-grow: 1;
-	padding: 40px 15px 25px;
-
-	&__wrapper {
-		margin-bottom: 1rem;
-	}
+	padding: 40px 0 25px;
+	min-height: 100%;
 }
 
 .video__bodyWrapper {

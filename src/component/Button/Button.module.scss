@@ -11,14 +11,19 @@
 	transition: background-color 300ms;
 	user-select: none;
 	text-transform: uppercase;
+	min-width: 250px;
 
 	&:hover,
 	&:active {
 		opacity: 0.9;
 	}
 
-	&.btn-no-bg {
+	&.btnNoBg {
 		background-color: transparent;
 		color: hsl(204, 100%, 60%);
 	}
+}
+
+.btn + .btn {
+	margin-top: 0.8rem;
 }

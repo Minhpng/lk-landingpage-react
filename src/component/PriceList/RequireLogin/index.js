@@ -1,26 +1,30 @@
 import clsx from 'clsx'
 
 import images from '../../../assets/img'
+import Button from '../../Button';
+import Support from '../../Support';
 import styles from './RequireLogin.module.scss'
 
-function RequireLogin() {
+
+
+function RequireLogin({ action }) {
+
+    const handleLogin = () => {
+        action(prev => ({ ...prev, inProcess: true }))
+    }
     return (
-        <div className="ask-for-login">
-            <h3 className="fs-sec-heading fw-semi-bold">Đăng nhập để xem mức giá đặc biệt của của bạn!</h3>
-            <button className="btn">Đăng nhập và nhận ưu đãi</button>
-            <div className="support text-center">
-                <p className="text-red fw-bold fs-body">Vui lòng liên hệ hỗ nếu bạn cần giúp đỡ</p>
-                <div className="support-phone-wrapper">
-                    <div className="support-icon">
-                        <svg className="icon"><use xlinkHref={`${images.supportIcon.default}#supportIcon`}></use></svg>
-                    </div>
-                    <a className="support-phone-number" href="tel:+84973979109">097 397 9109</a>
-                </div>
+        <>
+            <div className={clsx(styles.requireLogin)}>
+                <h3 className="fs-sec-heading fw-semi-bold">Đăng nhập để xem mức giá đặc biệt của của bạn!</h3>
+                <Button onClick={handleLogin} className={clsx(styles.btn)}>Đăng nhập và nhận ưu đãi</Button>
+                <Support />
             </div>
-        </div>
+
+        </>
     );
 }
 
 export default RequireLogin;
+
 
 
