@@ -6,11 +6,7 @@ import styles from './ExerciseWelcomeScreen.module.scss'
 
 function ExerciseWelcomeScreen({ action }) {
     const startExercise = () => {
-        action(prev => ({
-            ...prev,
-            onCoundownScreen: true,
-            onWelcomeScreen: false
-        }))
+        action(2)
     }
 
     return (
