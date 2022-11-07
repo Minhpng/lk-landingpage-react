@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/lk-landingpage-react/static/css/main.75641a58.css",
-    "main.js": "/lk-landingpage-react/static/js/main.1d1e8d20.js",
+    "main.css": "/lk-landingpage-react/static/css/main.6ccd5d02.css",
+    "main.js": "/lk-landingpage-react/static/js/main.f53b87e1.js",
     "static/js/787.2e26a0e7.chunk.js": "/lk-landingpage-react/static/js/787.2e26a0e7.chunk.js",
     "static/media/big-comment.png": "/lk-landingpage-react/static/media/big-comment.6a6a8671d4906bf14b1b.png",
     "static/media/big-comment-vertical.png": "/lk-landingpage-react/static/media/big-comment-vertical.f43bba459ab164b28c50.png",
@@ -25,12 +25,12 @@
     "static/media/section-divider.svg": "/lk-landingpage-react/static/media/section-divider.cb78d5768831b6e21f34.svg",
     "static/media/Rectangle-9.svg": "/lk-landingpage-react/static/media/Rectangle-9.5d752a90f03845a05bd3.svg",
     "static/media/Rectangle-8.svg": "/lk-landingpage-react/static/media/Rectangle-8.71841252ab3ef3e7a9e9.svg",
-    "main.75641a58.css.map": "/lk-landingpage-react/static/css/main.75641a58.css.map",
-    "main.1d1e8d20.js.map": "/lk-landingpage-react/static/js/main.1d1e8d20.js.map",
+    "main.6ccd5d02.css.map": "/lk-landingpage-react/static/css/main.6ccd5d02.css.map",
+    "main.f53b87e1.js.map": "/lk-landingpage-react/static/js/main.f53b87e1.js.map",
     "787.2e26a0e7.chunk.js.map": "/lk-landingpage-react/static/js/787.2e26a0e7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.75641a58.css",
-    "static/js/main.1d1e8d20.js"
+    "static/css/main.6ccd5d02.css",
+    "static/js/main.f53b87e1.js"
   ]
 }
