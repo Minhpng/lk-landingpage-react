@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+
 import Footer from "./component/Footer";
 import GiftSection from "./component/GiftSection";
 import Header from "./component/Header";
@@ -45,7 +46,6 @@ function App() {
           {isExerciseModal && <ExerciseModal />}
         </Modal>)
       }
-
       <GiftSection />
       <Testimonials />
       <Footer />
