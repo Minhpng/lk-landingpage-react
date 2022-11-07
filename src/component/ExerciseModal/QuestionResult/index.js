@@ -10,7 +10,6 @@ function QuestionResult({ isRight, answer }) {
     if (isRight) {
         element = <p className={clsx(styles.answerResult)}>Đúng rồi! Hay quá!</p>
     } else {
-        console.log('false', isRight);
         element = (
             <div className={clsx(styles.resultWrapper)}>
                 <div className={clsx(styles.desc)}>Đáp án:</div>

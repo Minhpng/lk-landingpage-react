@@ -27,6 +27,7 @@ function App() {
     } else {
       body.style.overflowY = 'auto'
     }
+    console.log('render');
   })
 
   const isModalOpen = ModalState && Object.values(ModalState).indexOf(true) >= 0

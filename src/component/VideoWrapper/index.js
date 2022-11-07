@@ -6,7 +6,6 @@ function VideoWrapper({ posterUrl, videoUrl }) {
     return (
         <div className={clsx(styles.wrapper)}>
             <video
-                video-controler
                 autoPlay={false}
                 controls
                 poster={posterUrl}

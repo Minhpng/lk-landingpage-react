@@ -12,7 +12,7 @@ function Modal({ children, closeModal }) {
 
     return (
         <div className={clsx(styles.modal)} role="dialog" >
-            <div div className={clsx(styles.wrapper)} role="document" >
+            <div className={clsx(styles.wrapper)} role="document" >
                 <div className={clsx(styles.content)}>
                     <div onClick={handleClose} className={clsx(styles.closeBtn)}>
                         <i className="fa-solid fa-xmark"></i>

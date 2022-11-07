@@ -21,7 +21,7 @@ const exercisePackage = [
     },
     {
         questionName: 'Có gì đó trong mắt của tôi',
-        answers: ["There's something in my eyes",]
+        answers: ["There's something in my eyes", "There is something in my eyes"]
     },
     {
         questionName: 'Bạn cảm thấy thế nào?',
@@ -51,18 +51,20 @@ function QuestionElement({ action }) {
     let answer = exercisePackage[currentQuestion].answers
     const userInputRef = useRef()
 
-    useEffect(() => {
-        userInputRef.current.focus()
-    }, [])
+    const eliminateSpecialChar = (strings) => {
+        const newStrings = strings.replace(/,|\.|\?|!/g, '')
+        return newStrings
+    }
 
     const handleSubmit = () => {
-        const userAnswer = userInputRef.current.value.trim().toLowerCase()
+        const userAnswer = eliminateSpecialChar(userInputRef.current.value.trim().toLowerCase())
+
         if (!userAnswer) return
 
         setSubmit(true)
         userInputRef.current.disabled = true
 
-        const newAnswers = answer.map(item => item.toLowerCase().trim())
+        const newAnswers = answer.map(item => eliminateSpecialChar(item.toLowerCase().trim()))
         const isRight = newAnswers.indexOf(userAnswer) !== -1
         action.setCheckAnswer({
             isRight: isRight,
