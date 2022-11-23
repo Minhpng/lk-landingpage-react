@@ -53,12 +53,14 @@ const packages = [
 ]
 
 function PriceList() {
+
+    const compact = 'compact'
     return (
         <div className={clsx(styles.listWrapper)}>
             <h2 className="fs-sec-heading fw-bold text-center">Mức giá ưu đãi dành riêng cho bạn
                 <br />Chỉ 1 lần duy nhất
             </h2>
-            <Countdown renderer={CountdownElement} date='2022-11-11T00:00:00' />
+            <Countdown compact={false} renderer={CountdownElement} date='2022-11-31T00:00:00' />
             <p className={clsx(styles.textCta)}>Chọn gói thanh toán</p>
             <div className={clsx(styles.packageWrapper)}>
                 {packages.map((packageItem, index) => (

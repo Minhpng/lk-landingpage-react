@@ -1,10 +1,18 @@
 .wrapper {
+	--fz-normal: 2rem;
+	--fz-compact: 1.125rem;
 	margin-bottom: 1rem;
 	user-select: none;
+	font-size: var(--fz-normal);
+}
+
+.wrapper.compact {
+	--fz-normal: 1.25rem;
+	--fz-compact: 0.825rem;
 }
 
 .heading {
-	font-size: 1.25rem;
+	font-size: var(--fz-compact);
 	font-weight: 700;
 	margin-bottom: 0.625rem;
 	text-align: center;
@@ -15,7 +23,8 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 15px;
+	font-size: inherit;
+	gap: 0.525em;
 }
 
 .numberWrapper {
@@ -27,7 +36,7 @@
 }
 
 .number {
-	font-size: 2rem;
+	font-size: var(--fz-normal);
 	font-weight: 700;
 	line-height: 1.2;
 	text-align: center;
@@ -39,7 +48,7 @@
 
 .prefix {
 	text-transform: uppercase;
-	font-size: 1rem;
+	font-size: var(--fz-compact);
 	font-weight: 500;
 	color: hsl(0, 0%, 60%);
 }

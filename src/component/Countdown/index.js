@@ -6,11 +6,13 @@ import { useState, useEffect } from 'react';
 
 import styles from './Countdown.module.scss';
 
-function Countdown({ days, hours, minutes, seconds }) {
+function Countdown({ days, hours, minutes, seconds, props }) {
+
+    const { compact } = props
 
 
     return (
-        <div className={clsx(styles.wrapper)}>
+        <div className={clsx(styles.wrapper, { [styles.compact]: compact })}>
             <div className={clsx(styles.heading)}>Ưu đãi kết thúc sau:</div>
             <div className={clsx(styles.clockWrapper)}>
                 {days > 0 &&
